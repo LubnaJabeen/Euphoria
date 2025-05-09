@@ -38,7 +38,7 @@ body{
     justify-content: center;
     justify-content: space-evenly;
     font-size: 20px;
-}
+}    
 #spotlight .headerwrapper nav h4{
     margin-right: 35px;
 }
@@ -53,7 +53,14 @@ body{
     color: #3C4242;
 }
 #spotlight .search-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+#spotlight .headerwrapper nav a:active{
+    color: #3C4242;   
+}
+
 input[type=text] {
     width: 100%;
     box-sizing: border-box;
@@ -72,7 +79,6 @@ input[type=text] {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-
 }
 #spotlight .icons ul li a{
     margin-right: 20px;
@@ -86,54 +92,35 @@ a:hover {
     color: #3C4242; 
 }
 button:hover {
-    cursor: pointer;
-    background-color: #3C4242;
-    color: white;
+    background-color: #3C4242;   
 }
 .carousel-indicators{
     list-style: none;
 }
 .carousel-itemactive{
-    position: relative;
-    width: 100%;
-    height: 70%;
-    display: block;
-    margin-top:-90px ;
+    
 }
 .deal-image {
-    width: 442.63px;
-    height: 268.95px;
-    display: block;
-    overflow: hidden;
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    
 }
 .carousel-itemactive img{
     width: 100%;
-    display: block;
-    background-size: cover;
-    background-position: center top;
-    background-repeat: no-repeat;
-    clip-path: inset(90px 0 50px 0);
+   
 }
 .d-block{     
     display: block;
-    overflow: hidden;
-    position: relative;
-    bottom: 20px;
-    z-index: 0;
+    margin-top: -15px;
 }
 .carousel-itemactive h5{
     position: absolute;
-    top : 15%;
+    top : 28%;
     left: 15%;
     font-size: 32px;
-    color: #ffffff;
+    color: #ffffff;    
 }
 .carousel-itemactive h1{
     position: absolute;
-    top : 20%;
+    top : 37%;
     left: 15%;
     max-width: 400px;
     line-height: 93.62px;
@@ -144,17 +131,16 @@ button:hover {
 }
 .carousel-itemactive h4{
     position: absolute;
-    bottom: 36%;
+    bottom: 3%;
     left: 16%;
     color: #ffffff;
     font-size: 32px;
     letter-spacing: 0.31px;
     font-weight: bold;
-    
 }
 .carousel-itemactive button{
     position: absolute;
-    top : 65%;
+    top : 95%;
     left: 16%;
     padding: 16px 72px;
     font-size: 18px;
@@ -179,11 +165,10 @@ button:hover {
     right: 30px;
 }
 #deals {
-    padding: 4rem 0;
+    padding: 2rem 0;
 }
 .wrapper {
-    width: 90%;
-    max-width: 1200px;
+    width: 80%;
     margin: auto;
 }
 .explore {
@@ -207,6 +192,10 @@ button:hover {
     height: auto;
     display: block;
     border-radius: 12px;
+    
+    background-color: gray;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 .left h5,
 .right h5,
@@ -225,45 +214,52 @@ button:hover {
 }
 .left h5 {
     top: 4rem;
-    left: 1.5rem;
+    left: -1.5rem;
     font-size: 1rem;
 }
 .left h2 {
-    top: 9rem;
-    left: 1.5rem;
+    top: 6.5rem;
+    left: -1.5rem;
     font-size: 2rem;
     font-weight: 700;
 }
 .left h3 {
-    top: 12rem;
-    left: 1.5rem;
+    top: 9rem;
+    left: -1.5rem;
     font-size: .8rem;
 }
-.left h6,
+.left h6{
+    bottom: 5rem;
+    left: -1.5rem;
+    font-size: 1rem;
+    text-decoration: none;
+    color: #fff;
+    letter-spacing: .1rem;
+    font-weight: bold;
+}
 .right h6 {
-    bottom: 6rem;
-    left: 1.5rem;
+    bottom: 4rem;
+    left: -1.5rem;
     font-size: 1rem;
 }
 .right h5 {
     top: 4rem;
-    left: 1.5rem;
+    left: -1.5rem;
     font-size: 1rem;
 }
 .right h2 {
-    top: 7rem;
-    left: 1.5rem;
+    top: 6.5rem;
+    left: -1.5rem;
     font-size: 2rem;
     font-weight: 700;
     max-width: 250px;
 }
 .right h3 {
-    top: 12rem;
-    left: 1.5rem;
+    top: 11.5rem;
+    left: -1.5rem;
     font-size: .8rem;
 }
 a {
-    color: white;
     text-decoration: none;
 }
 a:hover {
@@ -271,13 +267,24 @@ a:hover {
     transition: 0.3s ease;
 }
 .arrivals {
-    margin-top: 40px;
-    padding: 20px;
+    width: 100%;
+    margin: 60px 0;
 }
 .arrivals h3 {
     font-size: 2rem;
     margin-bottom: 20px;
     font-family: 'Causten', sans-serif;
+    position: relative;
+}
+.arrivals h3::before{
+    content: '';
+    height: 28px;
+    width: 4px;
+    background-color: #A855F7;
+    position: absolute;
+    left: -15px;
+    top: 2px;
+    border-radius: 4px;
 }
 .arrivals .arrows {
     display: flex;
@@ -286,14 +293,14 @@ a:hover {
 }
 .arrivals .arrows .arrow-left {
     position: absolute;
-    bottom: -55rem;
-    left: 36px; 
+    bottom: -47rem;
+    left: 70px; 
 
 }
 .arrivals .arrows .arrow-right {
     position: absolute;
-    bottom: -55rem;
-    right: 51px;
+    bottom: -47rem;
+    right: 70px;
 }
 .arrivals ul {
     display: flex;
@@ -328,7 +335,6 @@ a:hover {
 .fashions img {
     width: 500px;
     height: 521px;
-    border-radius: 10px;
     align-items: center;
 }
 .fashions h2 {
@@ -373,26 +379,36 @@ a:hover {
     background-color: #444;
 }
 .Men {
-    margin: 60px 80px;
+
 }
 .Men h3 {
     font-size: 2rem;
     margin-bottom: 30px;
     color: #222;
     font-family: 'Causten', sans-serif;
+    position: relative;
+}
+.Men h3::before{
+    content: '';
+    height: 28px;
+    width: 4px;
+    background-color: #A855F7;
+    position: absolute;
+    left: -15px;
+    top: 2px;
+    border-radius: 4px;
 }
 .Men ul {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-    gap: 20px;
+    gap: 30px;
     list-style: none;
     padding: 0;
     margin: 0;
 }
 .Men li {
-    background-color: #f9f9f9;
-    border-radius: 12px;
-    
+    border-radius: 5px;
+    margin: 0;
 }
 .Men li:hover {
     transform: translateY(-5px);
@@ -400,7 +416,7 @@ a:hover {
 }
 .Men li img:first-child {
     width: 100%;
-    height: 334px;
+    height: 300px;
     display: block;
     border-bottom: 1px solid #ddd;
 }
@@ -414,27 +430,43 @@ a:hover {
     display: inline-block;
     margin-top: 0;
     margin-right: 110px;
-    font-size: 14px;
-    color: #777;
-    font-family: 'Causten', sans-serif;
+    font-size: 13px;
+    color: #b7b7b7;
+    font-family: 'Caustenthin';
+    font-weight: bold;
 }
 .Men li img:last-child {
-    width: 20px;
-    height: 20px;
+    position: absolute;
+    margin-left: 25px;
+    margin-top: -10px;
+    color: #797979;
+    height: 12px;
+    width: 15px;
 }
 .women {
-    margin: 60px 80px;
+
 }
 .women h3 {
     font-size: 2rem;
     margin-bottom: 30px;
     color: #222;
     font-family: 'Causten', sans-serif;
+    position: relative;
+}
+.women h3::before{
+    content: '';
+    height: 28px;
+    width: 4px;
+    background-color: #A855F7;
+    position: absolute;
+    left: -15px;
+    top: 2px;
+    border-radius: 4px;
 }
 .women ul {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-    gap: 20px;
+    gap: 30px;
     list-style: none;
     padding: 0;
     margin: 0;
@@ -453,7 +485,7 @@ a:hover {
 }
 .women li img:first-child {
     width: 100%;
-    height: auto;
+    height: 300px;
     display: block;
     border-bottom: 1px solid #ddd;
 }
@@ -465,30 +497,33 @@ a:hover {
     text-align: left;
 }
 .women li h6 {
-    color: #777;
-    font-family: 'Causten', sans-serif;
     text-align: left;
     display: inline-block;
     margin-top: 0;
-    margin-right: 120px;
-    font-size: 14px;
+    margin-right: 150px;
+    font-size: 13px;
+    color: #b7b7b7;
+    font-family: 'Caustenthin';
+    font-weight: bold;
+   
 }
 .women li img:last-child {
-    width: 20px;
-    height: 20px;
+    position: absolute;
+    margin: -10px;
+    color: #797979;
+    height: 12px;
+    width: 15px;
 }
 .brands {
-    margin: 80px 0;
     text-align: center;
     background-color: #3C4242;
-    border-radius: 4px;
-    padding: 32px 30px;
-    margin: 0 80px;
+    border-radius: 8px;
+    padding: 40px;
 }
 .brands h2 {
     font-size: 50px;
     color: #fff;
-    margin-bottom: 10px;
+    margin-top: 0px;
     font-family: 'Causten', sans-serif;
 }
 .brands h4 {
@@ -513,19 +548,30 @@ a:hover {
     transform: scale(1.05);
 }
 .limelight {
-    margin: 80px 60px;
+    margin-bottom: 40px;
+}
+.limelight h3::before{
+    content: '';
+    height: 28px;
+    width: 4px;
+    background-color: #A855F7; 
+    position: absolute;
+    left: -15px;
+    top: 2px;
+    border-radius: 4px;
 }
 .limelight h3 {
     font-size: 2rem;
     font-family: 'Causten', sans-serif;
     color: #222;
+    position: relative;
     margin-bottom: 40px;
     margin-left:10px ;
 }
 .limelight a {
     display: inline-block;
     width: 220px;
-    margin: 0 15px 40px;
+    margin: 0 15px;
     text-decoration: none;
     color: #000;
     text-align: center;
@@ -564,55 +610,92 @@ a:hover {
 }
 .limelight a h4{
     background-color: #f3f3f3; 
-    color: #2e2e2e; 
-    font-weight: 600; 
-    font-size: 1rem; 
-    padding:  1rem; 
-    border-radius: 12px; 
+    font-size: 13px; 
+    padding: 10px 32px; 
+    align-items: center;
+    text-align: center;
+    border-radius: 6px; 
     display: inline-block; 
-    margin-left: 130px;
+    position: absolute;
+    color: #2e2e2e;
+    height: 12px;
+    width: 15px;
+    bottom: 3px;
+    left: 165px;
+    padding-left: 8px;
 }
 .feedback {
-    padding: 0 0 80px;
-    display: flex;
-    justify-content: space-between;
-    gap: 30px;
-    flex-wrap: wrap;
-}
-.feedback .person {
+    padding: 1px 0px;
     background-color: #fff;
-    padding: 0 20px;
-    border: 1px solid #666;
-    border-radius: 15px;
-    width: calc(33.33% - 30px);
-    box-sizing: border-box;
+    margin-bottom: 100px;
+    width: 110%;
 }
-.feedback .person img:first-child {
+.feedback h3 {
+    font-size: 32px;
+    color: #2d2d2d;
+    position: relative;
+    margin-bottom: 30px;
+    font-weight: 700;
+}  
+.feedback h3::before {
+    content: '';
+    height: 28px;
+    width: 4px;
+    background-color: #A855F7; 
+    position: absolute;
+    left: -15px;
+    top: 2px;
+    border-radius: 4px;
+  }
+  
+.person{
+    display: inline-block;
+    vertical-align: top;
+    width: 25%;
+    margin: 1%;
+    background-color: #fff;
+    border: 1px solid #807D7E;
+    border-radius: 12px;
+    padding: 20px;
+    height: 200px;
+}
+.profile-stars {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+    justify-content: space-between;
+}
+.profile-stars img{
     display: block;
-    width: 60px;
-    height: 60px;
-    margin: 15px 0;
 }
-.feedback .person img:nth-child(n+2):nth-child(-n+6) {
+.profile {
+    width: 50px;
+    height: 50px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+.stars {
+    display: flex;
+    gap: 4px;
+    margin-bottom: 35px;
+}
+.stars img {
     width: 20px;
     height: 20px;
-    margin: 0 2px;
 }
-.feedback .person h4 {
-    font-size: 1.2rem;
-    font-weight: 500;
-    margin: 4px 0;
-    font-family: 'Causten', sans-serif;
-    color: #222;
+.person h4{
+    letter-spacing: .1em;
+    font-size: 20px;
+    margin: 0;
+    color: #3C4242;
 }
-.feedback .person h5 {
-    line-height: 1em;
-    font-weight: normal;
-    color: #555;
-    font-family: 'Causten', sans-serif;
+.person h5{
+    color: #807D7E;
+    font-weight: 100;
 }
 .footer {
-    background-color: #222;
+    background-color: #3C4242;
     color: #fff;
     padding: 30px 0 ;
     font-family: 'Causten', sans-serif;
@@ -620,27 +703,27 @@ a:hover {
 }
 .footer .Top {
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
-    padding: 0 10%;
+    margin-top: 10px;
     margin-bottom: -26px;
+    font-size: 20px;
 }
 .footer .Top ul {
     list-style: none;
     padding: 0;
-    width: 22%;
-    min-width: 200px;
+    margin: 0 34px;
 }
-.footer .Top ul h3 {
-    font-size: 1.2rem;
-    margin-bottom: 20px;
-    font-weight: 600;
+.footer .Top ul:first-child{
+    margin-left: 200px;
+}
+.footer .Top ul h2 {
+    margin-bottom: 25px;
     color: #fff;
 }
 .footer .Top ul li {
     margin-bottom: 10px;
     font-size: 0.95rem;
-    color: #ccc;
+    color: #fff;
     cursor: pointer;
     transition: color 0.3s;
     line-height: 2em;
@@ -657,13 +740,14 @@ a:hover {
     display: block;
     gap: 30px;
     margin-top: -62px;
+    margin-left: 90px;
 }
 .footer .social-media img {
-    width: 20px;
-    height: 20px;
+    width: 15px;
+    height: 15px;
     background-color: #fff;
     padding: 10px;
-    border-radius: 15px;
+    border-radius: 10px;
     cursor: pointer;
     gap: 40px;
 }
@@ -671,59 +755,67 @@ a:hover {
     color: #fff;
     text-align: right;
 }
-.footer .app h1 {
+.footer .app h2 {
     font-weight: bold;
     font-size: 30px;
-    margin: 7px 0;
+    margin: 10px 105px 0;
 }
 .footer .playstore,
-.footer .appstore {
-    display: inline-flex;
-    margin: 10px;
-    gap: 10px;
-    cursor: pointer;
+.footer .appstore{
+    display: inline-block;
+    margin: 0 15px;
+    text-align: left;
 }
 .footer .playstore img,
 .footer .appstore img {
-    width: 30px;
+    width: 40px;
+    height: 40px;
+    display: block;
+    position: relative;
+    right: 95px;
+    margin: 15px auto 5px;
+    padding: 0 40px;
 }
 .footer .playstore h5,
 .footer .appstore h5 {
-    color: #aaa;
+    color: #ccc;
+    font-size: 12px;
+    font-weight: 200;
+    margin: 5px 0 2px;
+    position: relative;
+    bottom: 42px;
 }
 .footer .playstore h4,
 .footer .appstore h4 {
-    font-size: 1rem;
     color: #fff;
+    font-size: 14px;
+    font-weight: 300;
+    margin: 0;
+    position: relative;
+    bottom: 41px;
 }
-.footer hr {
-    border: none;
-    border-top: 1px solid #444;
-    margin: 20px 0;
-}
-
 .Popular-Categories {
-    margin: -20px;
+    margin: 4px -13px;
     color: #fff;
 }
 .Popular-Categories h2 {
     text-align: left;
     font-weight: 700;
-    margin-bottom: 40px;
-    margin-left: 20px;
+    margin-bottom: 20px;
+    margin-left: 110px;
 }
 .Popular-Categories img {
-    margin-left: 70%;
+    margin-left: 76%;
+    width: 17px;
 }
 .Popular-Categories hr{
-    border: none;
-    border-top: 1px solid #444;
-    margin: 20px 0;    
+    border-top: 0px solid #BEBCBD;
 }
-.Popular-Categories h5 {
-    font-size: 0.9rem;
-    color: #bbb;
-    margin-top: 15px;
+.Popular-Categories h4 {
+    font-weight: 500;
+    letter-spacing: 1px;
+    color: #fff;
+    margin-top: 45px;
     text-align: center;
 }
 .categories-header {
@@ -736,7 +828,6 @@ a:hover {
     background-color: #2f3435;
     color: #fff;
 }
-  
 .categories-header .title {
     font-size: 1.5rem;
     font-weight: 600;
@@ -747,35 +838,296 @@ a:hover {
     cursor: pointer;
     transition: transform 0.3s ease;
 }
-  @media (max-width: 768px) {
+
+@media (max-width: 1080px) {
+    .carousel-itemactive h5 {
+        top: 35%;
+    }
+    .carousel-itemactive h1 {
+        top: 43%;
+    }
+    .carousel-itemactive h4 {
+        bottom: -50%;
+    }
+    .carousel-itemactive button {
+        top: 145%;
+    }
+    .left h5 {
+        top: 3rem;
+    }
+    .left h2 {
+        top: 5.5rem;
+    }
+    .left h3 {
+        top: 8rem;
+    }
+    .right h5 {
+        top: 3rem;
+    }
+    .right h2 {
+        top: 5.5rem;
+        font-size: 1.8rem; 
+    }
+    .right h3 {
+        top: 9.5rem;
+    }
+    a {
+        text-decoration: none;
+        position: relative;
+        top: 2px;
+    }
+    .arrivals .arrows .arrow-right {
+        bottom: -9rem;
+        left: 55rem;
+    }
+    .arrivals .arrows .arrow-left {
+        bottom: -9rem;
+        left: -49px;
+    }
+    .fashions {
+        flex-wrap: nowrap;
+    }
+    .fashions h2{
+        left: 1%;
+    }
+    .fashions h5{
+        left: 1%;
+        bottom: 212px;
+    }
+    .fashions button {
+        left: 1%;
+        top: 295px;
+    }
+    .limelight a {
+        width: 265px;
+    }
+    .limelight a h4 {
+        left: 205px;
+    }
+    .Men li img:last-child {
+        margin-left: -10px;
+    }
+    .women li img:last-child {
+        margin-left: -12px;
+    }
+    .women li h6 {
+        margin-right: 117px;
+    }
+    .footer .Top ul:first-child{
+        margin-left: 105px;
+    }
+    .footer .social-media {
+        margin-left: 19px;
+    }
+    .Popular-Categories img {
+        display: block;
+        margin-top: -15px;
+    }
+}
+@media (max-width: 980px) {
+    .carousel-itemactive h5 {
+        font-size: 28px;
+        top: 35%;
+    }
+    .carousel-itemactive h1 {
+        font-size: 70px;
+        line-height: 90.62px;
+    }
+    .carousel-itemactive h4 {
+        bottom: -38%;
+    }
+    .carousel-itemactive button {
+        top: 135%;
+    }
+    .left h2 {
+        top: 5rem;
+    }
+    .left h3 {
+        top: 7.5rem;
+    }
+    .left h6 {
+        bottom: 3rem;
+    }
+    .right h2 {
+        top: 5rem;
+        max-width: 200px;
+        font-size: 24px;
+    }
+    .right h3 {
+        top: 8.5rem;
+    }
+    .right h6 {
+        bottom: 3rem;
+    }
+    .arrivals .arrows .arrow-right {
+        bottom: -9rem;
+        left: 50rem;
+    }
+    .arrivals ul li img {
+        height: 215px;
+    }
+    .fashions img {
+        width: 450px;
+        height: 405px;
+    }
+    .fashions h2 {
+        bottom: 230px;
+        font-size: 1.5rem;
+        max-width: 400px;
+        left: 5%;
+        font-size: 26px;
+    }
+    .fashions h5 {
+        left: 5%;
+        bottom: 130px;
+    }
+    .fashions button {
+        top: 240px;
+        left: 5%;
+    }
+    .Men ul {
+        gap: 0;
+    }
+    .Men li img:first-child {
+        width: 84%;
+        height: 265px;
+    }
+    .Men li img:last-child {
+        margin-left: -35px;
+        margin-top: -5px;
+    }
+    .women ul{
+        gap: 0;
+    }
+    .women li img:first-child {
+        width: 95%;
+        height: 265px;
+    }
+    .women li img:last-child {
+        margin-left: -25px;
+    }
+    .brand-logo {
+        gap: 20px;
+    }
+    .person {
+        padding: 21px;
+        height: 205px;
+    }
+    .footer .Top ul:first-child {
+        margin-left: 17px;
+    }
+    .footer .Top ul {
+        margin: 1px 24px 0;
+        padding-left: 10px;
+    }
+}
+@media (max-width: 768px) {
     .categories-header {
-      padding: 1rem 2rem;
+        padding: 1rem 2rem;
     }
-  
-    .categories-header .title {
-      font-size: 1.25rem;
+    #spotlight .headerwrapper {
+        margin: -12px;
     }
-  
-    .categories-header .arrow-icon {
-      font-size: 1.5rem;
+    #spotlight .search-container {
+        margin-top: 35px;
     }
-  }
-  
-  @media (max-width: 480px) {
-    .categories-header {
-      flex-direction: column;
-      gap: 0.5rem;
-      text-align: center;
+    .carousel-itemactive img {
+        width: 118%;
     }
-  
-    .categories-header .title {
-      font-size: 1.1rem;
+    .deal-image {
+        width: 100%;
+        height: 200px;
     }
-  
-    .categories-header .arrow-icon {
-      font-size: 1.4rem;
+    a {
+        top: 18px;
     }
-  }
+    .left, .right {
+        min-width: 300px;
+        max-width: 503px;
+    }
+    .wrapper {
+        margin-left: 70px;
+        width: 100%;
+    }
+    #categories{
+        margin-left: 10px;
+    }
+    .arrivals .arrows .arrow-right {
+        left: 49rem;
+    }
+    .women li h6 {
+        margin-right: 116px;
+    }
+    .feedback{
+        margin-left: -15px;
+    }
+    .footer{
+        width: 120%;
+        margin-left: -11px;
+    }
+    .footer .Top {
+        flex-wrap: nowrap;
+    }
+    .footer .Top ul h2 {
+        font-size: 17px;
+    }
+
+}
+@media (max-width: 640px) and (min-width: 320px) {
+    .carousel-itemactive img {
+        width: 139%;
+    }
+    .carousel-itemactive h5 {
+        top: 22%;
+    }
+    .carousel-itemactive h1 {
+        top: 27%;
+    }
+    .carousel-itemactive h4 {
+        bottom: 12%;
+    }
+    .carousel-itemactive button {
+        top: 85%;
+    }
+    .deal-image {
+        width: 110%;
+    }
+    .arrivals ul li h5 {
+        margin-top: 25px;
+    }
+    .arrivals .arrows .arrow-right {
+        left: 41rem;
+    }
+    .fashions {
+        margin-left: 75px;
+    }
+    .fashions h2 {
+        left: -11%;
+    }
+    .fashions h5 {
+        left: -11%;
+    }
+    .fashions button {
+        left: -11%;
+    }
+    .brands {
+        width: 106%;
+    }
+    .wrapper {
+        margin-left: 70px;
+        width: 100%;
+    }
+    #categories{
+        margin-left: 10px;
+    }
+    .feedback {
+        width: 130%;
+    }
+    .footer{
+        width: 141%;
+        padding: 5px 0;
+    }
+}
   
 
 

@@ -11,7 +11,7 @@
         <section class="headerwrapper">
 			<a href="#"><h1><img src="../images/Logo.svg"/></h1></a>
             <nav>
-                <h4><a class="active" href="#shop">Shop</a></h4>
+                <h4><a class="active" href="#">Shop</a></h4>
                 <h4><a href="#">Men</a></h4>
                 <h4><a href="#">Women</a></h4>
                 <h4><a href="#">Combos</a></h4>
@@ -19,7 +19,7 @@
             </nav>
             <div class="search-container">
                 <form>
-                    <input type="text" name="search" placeholder="Search">
+                    <input type="text" name="search" placeholder="Search...">
                 </form>
             </div>
             <div class="icons">
@@ -30,7 +30,6 @@
                 </ul>
             </div>
         </section>           <!--end of header-->
-        <section class="wrapper">
             <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                 <ul class="carousel-indicators">
                   <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -52,7 +51,6 @@
                     <img src="../images/right-arrow-bold.svg"/>
                 </a>
             </div>
-        </section>
     </section>          <!--end of section #spolight-->
     <section id="deals">
         <section class="wrapper">
@@ -62,7 +60,7 @@
                     <h5><strong>Low Price</strong></h5>
                     <h2>High Coziness</h2>
                     <h3>UPTO 50% OFF</h3>
-                    <h6><a href="#"><u><strong>Explore Items</strong></u></a></h6>
+                    <h6><a href="#"><u>Explore Items</u></a></h6>
                 </div>
                 <div class="right">                             
                     <img src ="../images/bg-3.jpg" class="deal-image"/>                  
@@ -217,7 +215,7 @@
             </div>
             <div class="brands">
                 <h2>Top Brands Deal</h2>
-                <h4>Up to 60% off on brands</h4>
+                <h4>Up to <span style="color: yellow;">60%</span> off on brands</h4>
                 <div class="brand-logo">
                     <img src="../images/nike.jpg"/>
                     <img src="../images/H&M.jpg"/>
@@ -257,14 +255,20 @@
                     <h4>$119.00</h4>
                 </a>
             </div>
-            <div class="feedback">
+
+            <section class="feedback">
+                <h3>Feedback</h3>
                 <div class="person">
-                    <img src="../images/span-1.svg"/>      
-                    <img src="../images/star.svg"/>
-                    <img src="../images/star.svg"/>
-                    <img src="../images/star.svg"/>
-                    <img src="../images/star_half.png"/>
-                    <img src="../images/star_outline.png"/>
+                    <div class="profile-stars">
+                        <img src="../images/span-1.svg"/>    
+                        <div class="stars">
+                            <img src="../images/star.svg"/>
+                            <img src="../images/star.svg"/>
+                            <img src="../images/star.svg"/>
+                            <img src="../images/star_half.png"/>
+                            <img src="../images/star_outline.png"/>
+                        </div>
+                    </div>
                     <h4>Floyd Miles</h4>
                     <h5>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto, odio inventore.
                         Dolorem eligendi sunt dolores cumque blanditiis <br>
@@ -272,33 +276,42 @@
                         Maiores, amet debitis corporis similique ipsam doloremque quae?</h5>
                 </div>
                 <div class="person">
-                    <img src="../images/span-2.svg"/>     
-                    <img src="../images/star.svg"/>
-                    <img src="../images/star.svg"/>
-                    <img src="../images/star.svg"/>
-                    <img src="../images/star.svg"/>
-                    <img src="../images/star_outline.png"/>
+                    <div class="profile-stars">
+                    <img src="../images/span-2.svg"/>
+                        <div class="stars">     
+                            <img src="../images/star.svg"/>
+                            <img src="../images/star.svg"/>
+                            <img src="../images/star.svg"/>
+                            <img src="../images/star.svg"/>
+                            <img src="../images/star_outline.png"/>
+                        </div>
+                    </div>
                     <h4>Ronald Richards</h4>
                     <h5>Lorem ipsum dolor, sit amet consectetur adipisicing elit. In maxime cum, suscipit 
                     numquam commodi possimus architecto dolore</h5>
                 </div>
                 <div class="person">
-                    <img src="../images/span-3.svg"/>      
-                    <img src="../images/star.svg"/>
-                    <img src="../images/star.svg"/>
-                    <img src="../images/star.svg"/>
-                    <img src="../images/star_half.png"/>
-                    <img src="../images/star_outline.png"/>
+                    <div class="profile-stars">
+                    <img src="../images/span-3.svg"/>    
+                        <div class="stars">  
+                            <img src="../images/star.svg"/>
+                            <img src="../images/star.svg"/>
+                            <img src="../images/star.svg"/>
+                            <img src="../images/star_half.png"/>
+                            <img src="../images/star_outline.png"/>
+                        </div>
+                    </div>
                     <h4>Savannah Nguyen</h4>
                     <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> Distinctio voluptates aperiam 
                         explicabo porro molestiae voluptatem vel, quia, minus quo, eum recusandae sunt eaque 
                         dolore sit labore. Laboriosam mollitia repellendus quisquam!</h5>
                 </div>
-            </div>
+            </section>
+    </section> <!--end of section #categories-->
             <div class="footer">
                 <div class="Top">
                     <ul>
-                        <h3>Need Help</h3>
+                        <h2>Need Help</h2>
                         <li>Contact Us</li>
                         <li>Track Order</li>
                         <li>Returns & Refunds</li>
@@ -306,7 +319,7 @@
                         <li>Career</li>
                     </ul>            
                     <ul>
-                        <h3>Company</h3>
+                        <h2>Company</h2>
                         <li>About Us</li>
                         <li>Euphoria Blog</li>
                         <li>Euphoriastan</li>
@@ -314,14 +327,14 @@
                         <li>Media</li>
                     </ul>
                     <ul>
-                        <h3>More Info</h3>
+                        <h2>More Info</h2>
                         <li>Term and Conditions</li>
                         <li>Privacy Policy</li>
                         <li>Shipping Policy</li>
                         <li>Sitemap</li>   
                     </ul>
                     <ul>
-                        <h3>Location</h3>
+                        <h2>Location</h2>
                         <li>support@euphoria.in</li>
                         <li>Eklingpura Chouraha, Ahmedabad Main Road</li>
                         <li>(NH 8- Near Mahadev Hotel) Udaipur, India- 313002</li>
@@ -329,7 +342,7 @@
                 </div>
                 <div class="Bottom">
                     <div class="app">
-                        <h1> Download The App</h1>
+                        <h2> Download The App</h2>
                         <div class="playstore">
                             <img src="../images/playstore.svg" alt="playstore">
                             <h5>android app on</h5>
@@ -349,13 +362,14 @@
                     </div>
                     <hr>
 					<div class="Popular-Categories">
+                        <hr>
                     	<h2>Popular Categories<img src="../images/arrow-down.svg"/></h2>
                     	<hr>
-                    	<h5><b>Copyright &copy; 2023 Euphoria Folks Pvt Ltd. All rights reserved</b></h5>
+                    	<h4><b>Copyright &copy; 2023 Euphoria Folks Pvt Ltd. All rights reserved</b></h4>
 					</div>
                 </div>
             </div>
         </section>
-    </section> <!--end of section #categories-->
+    </main>
 </body>
 </html>
